@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "12431460102",
+    "firebase_url": "https://fof-spot.firebaseio.com",
+    "project_id": "fof-spot",
+    "storage_bucket": "fof-spot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:12431460102:android:69b370986cbde2e2240087",
+        "android_client_info": {
+          "package_name": "com.petronas.fof.spot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "12431460102-1auaik9dhgmfgbgm5dbt1h6guc79csdq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxFIDCDrtoMjr_U4dGuF-elWv2a_t8PJ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "12431460102-1auaik9dhgmfgbgm5dbt1h6guc79csdq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.petronas.fof.spot">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/> -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.Manifest.permission.NETWORK_SETTINGS" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <application
+        android:name=".SpotApplication"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="false">
+        <activity android:name=".activities.BaseActivity" />
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.SchedulerActivity" />
+
+        <service
+            android:name=".services.ScanService"
+            android:enabled="true"
+            android:exported="false"
+            android:stopWithTask="false" /> <!-- FCM implementation -->
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".fcm.MyFirebaseInstanceIDService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service> <!-- END FCM -->
+        <receiver
+            android:name=".broadcastreceivers.AlarmReceiverLife"
+            android:enabled="true"
+            android:exported="true"
+            android:label="AlarmReceiverLifeClass"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="AlarmReceiverLife" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadcastreceivers.ScheduleReciever"
+            android:enabled="true"
+            android:exported="true"
+            android:label="ScheduleRecieverClass"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="${packageName}.alarm.action.trigger" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadcastreceivers.ScheduleStopServiceReciever"
+            android:enabled="true"
+            android:exported="true"
+            android:label="ScheduleStopServiceRecieverClass"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="${packageName}.alarm.action.trigger" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".broadcastreceivers.DeviceBootReceiver"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

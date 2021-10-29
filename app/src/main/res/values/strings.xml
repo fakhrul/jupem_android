@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">SPOT</string>
+    <string name="permission_description"> Secured Personnel Tracking (SPOT) tool is developed to ensure your safety and assist in back-tracing any positive COVID-19 cases among employees and contractors of PETRONAS (<a href="https://www.petronas.com/privacy-statement">privacy policy</a>). \nThe application will request access to your device location (GPS coordinates, WiFi and Bluetooth signal strengths). \nThe app will show a persistent notification when it’s collecting data in the background. \nYou can stop data collection at any point.</string>
+    <string name="notification_channel_id">default</string>
+    <string name="sunday">Sunday</string>
+    <string name="schedule_time">08:00 AM - 12:00 PM</string>
+    <string name="tuesday">Tuesday</string>
+    <string name="wednesday">Wednesday</string>
+    <string name="thursday">Thursday</string>
+    <string name="friday">Friday</string>
+    <string name="saturday">Saturday</string>
+    <string name="monday">Monday</string>
+    <string name="country_prompt">Choose a country</string>
+    <string name="notification_info">Notification Info</string>
+    <string name="start_time">Start Time</string>
+    <string name="stop_time">Stop Time</string>
+
+    <string name="department_name_required">Department name is required</string>
+    <string name="user_name_required">Username is required</string>
+    <string name="user_id_required">User ID is required</string>
+    <string name="phone_number_required">Phone number is required</string>
+    <string name="location_required">Location is required</string>
+    <string name="location_not_required">Location is not required</string>
+
+    <string-array name="array_name">
+        <item>07:00 AM</item>
+        <item>08:00 AM</item>
+        <item>09:00 AM</item>
+    </string-array>
+
+    <string-array name="available_departments">
+        <item>HRT</item>
+        <item>SCT</item>
+        <item>GT</item>
+        <item>GST</item>
+        <item>FTS</item>
+        <item>TMS</item>
+        <item>FOF</item>
+        <item>ARCC</item>
+        <item>UT</item>
+        <item>LS</item>
+        <item>FMA</item>
+        <item>HSE</item>
+        <item>GP</item>
+        <item>HR</item>
+        <item>CSD</item>
+        <item>SPOT-FP</item>
+        <item>SPOT-DV</item>
+        <item>Others</item>
+    </string-array>
+</resources>

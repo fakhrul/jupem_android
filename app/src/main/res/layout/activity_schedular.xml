@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp52"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:textSize="@dimen/sp14"
+            android:gravity="left|center"
+            android:visibility="invisible"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableLeft="@drawable/ic_action_scheduler"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="@string/sunday"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:visibility="invisible"
+            android:layout_margin="@dimen/dp5"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="2.4"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp14"
+                    android:text="Start Time"/>
+
+                <TextView
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp14"
+                    android:layout_height="wrap_content"
+                    android:text="Stop Time"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp52"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:textSize="@dimen/sp14"
+            android:gravity="left|center"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableLeft="@drawable/ic_action_scheduler"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="@string/sunday"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:layout_margin="@dimen/dp5"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.4"
+            >
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:weightSum="2">
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/startSunday"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/array_name"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:dropDownWidth="wrap_content"
+        />
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/stopSunday"
+        android:layout_alignParentEnd="true"
+        android:drawSelectorOnTop="true"
+        android:entries="@array/array_name"
+        android:gravity="end"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:dropDownWidth="wrap_content"/>
+</LinearLayout>
+
+        </LinearLayout>
+            <Switch
+                android:id="@+id/sundaySwitch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:layout_gravity="center"
+                />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp52"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:textSize="@dimen/sp14"
+            android:gravity="left|center"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableLeft="@drawable/ic_action_scheduler"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="@string/monday"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:layout_margin="@dimen/dp5"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.4"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/startMonday"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:dropDownWidth="wrap_content"
+                    />
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/stopMonday"
+                    android:layout_alignParentEnd="true"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name"
+                    android:gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:dropDownWidth="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/mondaySwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp52"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:textSize="@dimen/sp14"
+            android:gravity="left|center"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableLeft="@drawable/ic_action_scheduler"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="@string/tuesday"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:layout_margin="@dimen/dp5"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.4"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/startTuesday"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:dropDownWidth="wrap_content"
+                    />
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/stopTuesday"
+                    android:layout_alignParentEnd="true"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name"
+                    android:gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:dropDownWidth="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/tuesdaySwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp52"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:textSize="@dimen/sp14"
+            android:gravity="left|center"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableLeft="@drawable/ic_action_scheduler"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="@string/wednesday"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:layout_margin="@dimen/dp5"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.4"
+           >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/startWednesday"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:dropDownWidth="wrap_content"
+                    />
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/stopWednesday"
+                    android:layout_alignParentEnd="true"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name"
+                    android:gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:dropDownWidth="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/wednesdaySwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp52"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:textSize="@dimen/sp14"
+            android:gravity="left|center"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableLeft="@drawable/ic_action_scheduler"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="@string/thursday"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:layout_margin="@dimen/dp5"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.4"
+          >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/startThursday"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:dropDownWidth="wrap_content"
+                    />
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/stopThursday"
+                    android:layout_alignParentEnd="true"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name"
+                    android:gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:dropDownWidth="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/thursdaySwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp52"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:gravity="left|center"
+            android:drawablePadding="@dimen/dp10"
+            android:textSize="@dimen/sp14"
+            android:drawableLeft="@drawable/ic_action_scheduler"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="@string/friday"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:layout_margin="@dimen/dp5"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.4"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/startFriday"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:dropDownWidth="wrap_content"
+                    />
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/stopFriday"
+                    android:layout_alignParentEnd="true"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name"
+                    android:gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:dropDownWidth="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/fridaySwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp52"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1"
+            android:textSize="@dimen/sp14"
+            android:gravity="left|center"
+            android:drawablePadding="@dimen/dp10"
+            android:drawableLeft="@drawable/ic_action_scheduler"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:text="@string/saturday"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.01"
+            android:layout_margin="@dimen/dp5"
+            android:background="@android:color/darker_gray"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.4"
+            android:weightSum="2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/startSaturday"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:dropDownWidth="wrap_content"
+                    />
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/stopSaturday"
+                    android:layout_alignParentEnd="true"
+                    android:drawSelectorOnTop="true"
+                    android:entries="@array/array_name"
+                    android:gravity="end"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:dropDownWidth="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/saturdaySwitch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"/>
+
+</LinearLayout>
